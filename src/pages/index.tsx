@@ -1,11 +1,17 @@
 import { Header } from "../components/Header";
-import GlobalStyles from '../styles/global';
+import { GlobalStyle } from '../styles/global';
+
+const user = {
+  name: 'Nicholas Neto',
+  email: 'nicholasneto@gmail.com',
+}
+
 
 export default function Home() {
   return (
     <div  >
-      <GlobalStyles />
-      <Header />
+      <GlobalStyle />
+      <Header user={user}/>
     </div>
   )
 }
