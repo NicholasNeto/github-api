@@ -1,5 +1,4 @@
 import { Header } from "../components/Header";
-import { GlobalStyle } from '../styles/global';
 
 const user = {
   name: 'Nicholas Neto',
@@ -10,7 +9,6 @@ const user = {
 export default function Home() {
   return (
     <div  >
-      <GlobalStyle />
       <Header user={user}/>
     </div>
   )
