@@ -1,16 +1,22 @@
+import { Flex } from "@chakra-ui/react";
+import { Login } from "./Login";
+import { SearchBox } from "./SearchBox";
 
-interface HeaderProps {
-    user: {
-        name: string;
-        email: string;
-    }
-}
-
-export function Header({ user }: HeaderProps) {
+export function Header() {
     return (
-        <header>
-            <img src="https://avatars.githubusercontent.com/u/19715382?v=4" alt="" />
-            <button type="submit">Login</button>
-        </header>
+        <Flex
+            as='header'
+            width='100%'
+            maxWidth={1480}
+            height='20'
+            mx='auto' // mx margin horizontal | left and right
+            px='6' // px padding horizontal | left and right
+            mt='4'
+            align='center'
+            justifyContent='space-around'
+        >
+            <SearchBox />
+            <Login />
+        </Flex>
     )
 }
