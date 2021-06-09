@@ -1,4 +1,5 @@
 import { Header } from "../components/Header";
+import { Profile } from "../components/Profile";
 
 const user = {
   name: 'Nicholas Neto',
@@ -9,7 +10,8 @@ const user = {
 export default function Home() {
   return (
     <div  >
-      <Header user={user}/>
+      <Header />
+      <Profile name='Nicholas' email='nicolaspereiraneto@gmail.com.br'/>
     </div>
   )
 }
