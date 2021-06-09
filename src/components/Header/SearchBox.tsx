@@ -7,9 +7,9 @@ export function SearchBox() {
             as='label'
             flex='1'
             py='4' // py padding vertical | top | bottom
-            px='8' // px padding horizontal | left and right
+            px='4' // px padding horizontal | left and right
             ml='6'
-            maxWidth={800}
+            maxWidth={600}
             alignSelf='center'
             color='gray.200'
             position='relative'
@@ -17,9 +17,9 @@ export function SearchBox() {
             borderRadius='full'
         >
             <Input
-                color='gray.50'
+                color='gray.200'
                 variant='unstyled'
-                px='4'
+                px='2'
                 mr='4'
                 placeholder='Buscar na plataforma'
                 _placeholder={{ color: 'gray.400' }}
