@@ -6,11 +6,11 @@ export function Header() {
     return (
         <Flex
             as='header'
-            width='100%'
+            width='90%'
             maxWidth={1480}
             height='20'
-            mx='auto' // mx margin horizontal | left and right
-            px='6' // px padding horizontal | left and right
+            mx='20' // mx margin horizontal | left and right
+            px='40' // px padding horizontal | left and right
             mt='4'
             align='center'
             justifyContent='space-around'
