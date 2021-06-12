@@ -17,67 +17,40 @@ export function Profile({ name, email }: ProfileProps) {
             mt='4'
             justifyContent='center'
         >
-            <HStack flex={1} maxWidth={1000} align='flex-start' background='gray.800' borderRadius={8}>
+            <HStack flex={1} maxWidth={1000} align='flex-start' background='gray.800' borderRadius={8} padding='8'>
                 <Box>
                     <Image boxSize="200px" src="https://bit.ly/dan-abramov" alt="Dan Abramov" />
                 </Box>
                 <Box>
-
                     <VStack
                         spacing={4}
+                        marginLeft='4'
+                        marginTop='4'
                     >
-                        <FormControl display='flex' id="name">
-                            <FormLabel width='50%'>Nome:</FormLabel>
+                        <FormControl display='flex' id="name" width='25rem'>
+                            <FormLabel >Nome:</FormLabel>
                             <Input
-                                px='4'
-                                mr='4'
                                 placeholder="First name"
                                 value={name}
+                                isReadOnly={true}
+                                onChange={() => console.log('')}
+                                color='gray.400'
                             />
                         </FormControl>
 
-                        <FormControl display='flex' id="name">
-                            <FormLabel width='50%'>Email:</FormLabel>
+                        <FormControl display='flex' id="email" size='lg' width='25rem' >
+                            <FormLabel>Email:</FormLabel>
                             <Input
-                                width='100%'
-                                px='4'
-                                mr='4'
                                 placeholder="Email"
                                 value={email}
+                                isReadOnly={true}
+                                onChange={() => console.log('')}
+                                color='gray.400'
                             />
                         </FormControl>
-
-
-                        <FormControl display='flex' id="email" width='100%'>
-                            <FormLabel>E-mail:</FormLabel>
-                            <Flex
-                                as='label'
-                                py='4' // py padding vertical | top | bottom
-                                px='8' // px padding horizontal | left and right
-                                ml='6'
-                                maxWidth={200}
-                                alignSelf='center'
-                                color='gray.200'
-                                position='relative'
-                                background='gray.800'
-                                borderRadius='full'
-                            >
-                                <Input
-                                    color='gray.200'
-                                    variant='unstyled'
-                                    px='4'
-                                    mr='4'
-                                    _placeholder={{ color: 'gray.400' }}
-                                    value={email}
-                                />
-                            </Flex>
-                        </FormControl>
                     </VStack>
-
                 </Box>
             </HStack>
-
-
         </Flex>
     )
 }
