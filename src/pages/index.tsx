@@ -1,5 +1,6 @@
 import { Header } from "../components/Header";
 import { Profile } from "../components/Profile";
+import { RepositoryList } from "../components/Repository/RepositoryList";
 
 const user = {
   name: 'Nicholas Neto',
@@ -12,6 +13,7 @@ export default function Home() {
     <div  >
       <Header />
       <Profile name='Nicholas Pereira Neto' email='nicolaspereiraneto@gmail.com.br'/>
+      <RepositoryList />
     </div>
   )
 }
